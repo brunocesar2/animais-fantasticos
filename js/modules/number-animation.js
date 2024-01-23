@@ -21,7 +21,7 @@ export default function initNumberAnimation() {
       numberAnimation();
     }
   }
-  const observerTarget = document.querySelector(".numbers");
+  const observerTarget = document.querySelector(".numeros");
   const observer = new MutationObserver(handleMutation);
   observer.observe(observerTarget, { attributes: true });
 }
