@@ -7,11 +7,7 @@ export default function initScrollAnimation() {
       function showSections() {
         const sectionIsVisible =
           section.getBoundingClientRect().top - screenHalf < 0;
-        if (sectionIsVisible) {
-          section.classList.add("active");
-        } else if (section.classList.contains("active")) {
-          section.classList.remove("active");
-        }
+        section.classList.toggle("active", sectionIsVisible)
       }
     });
   }
