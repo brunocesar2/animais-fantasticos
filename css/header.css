@@ -14,6 +14,17 @@
   padding: 15px 8px;
   display: block;
 }
+.header-login::after {
+  content: "";
+  background: url("../img/icons8-seta-para-a-direita-96.png");
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  transform: translateY(-2px);
+}
 @media (max-width: 800px) {
   .header {
     grid-column: 1/5;
