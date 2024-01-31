@@ -13,7 +13,6 @@ export default function initFetchNumberAnimation() {
   }
   fetchNumberAnimation("./number-animation-api.json");
   function createAnimal(animal) {
-    console.log(animal);
     const div = document.createElement("div");
     div.innerHTML = `<h3>${animal.specie}</h3><span>${animal.total}</span>`;
     return div;
